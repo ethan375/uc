@@ -1,0 +1,7 @@
+.social{
+  background-color: $primary-color;
+  grid-column: social-start/social-end;
+  grid-row: 1/-1;
+
+  display: grid;
+}

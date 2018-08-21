@@ -1,0 +1,7 @@
+.content{
+  background-color: $dark-grey-2;
+  grid-column: content-start/content-end;
+  grid-row: 1/-1;
+
+  display: grid;
+}

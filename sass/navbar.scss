@@ -1,0 +1,41 @@
+.nav{
+  height: 100vh;
+  background-color: $primary-color;
+  grid-column: navbar-start/navbar-end;
+  grid-row: 1/-1;
+
+  display: grid;
+  grid-template-rows: 1fr [col-start]repeat(4, min-content)[col-end] 1fr;
+  grid-gap: 3rem;
+
+  justify-content: center;
+
+  &__item{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+  }
+
+  &__home{
+    grid-row: 2/3;
+  }
+
+  &__about{
+    grid-row: 3/4;
+  }
+
+  &__products{
+    grid-row: 4/5;
+  }
+
+  &__contact{
+    grid-row: 5/6;
+  }
+
+  &__copyright{
+    font-size: .8rem;
+    grid-row: 6/7;
+    margin-top: 20rem;
+    text-align: center;
+  }
+}
