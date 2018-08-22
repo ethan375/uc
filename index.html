@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="Undercover">
 <head>
   <meta charset="utf-8">
   <meta lang="us-en">
@@ -18,7 +18,9 @@
 </head>
 <body class="grid">
   <div class="nav">
-    <!-- <img src="#" alt=""> -->
+    <!-- <div class="logo">
+      <img class="logo__img" src="img/Undercoverlogo-dark.png" alt="Undercover Outdoors logo">
+    </div> -->
     <a href="" class="nav__item nav__home">Home</a>
     <a href="" class="nav__item nav__about">About Us</a>
     <a href="" class="nav__item nav__products">Products</a>
@@ -26,12 +28,18 @@
     <p class="nav__item nav__copyright">&copy;Copyright 2018 Undercover Outdoors Inc</p>
   </div>
 
-  <main class="content" ng-include>
+  <main ng-view>
     
   </main>
 
   <div class="social">
-    
+    <a href="" class="social__item social__facebook">Facebook</a>
+    <a href="" class="social__item social__houzz">Houzz</a>
+    <a href="" class="social__item social__insta">Instagram</a>
+    <a href="" class="social__item social__twitter">Twitter</a>
+    <a href="" class="social__item social__linkedin">LinkedIn</a>
+    <a href="" class="social__item social__pintrest">Pintrest</a>
+    <a href="" class="social__item social__google">Google+</a>
   </div>
 </body>
 </html>

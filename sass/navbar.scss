@@ -1,5 +1,4 @@
 .nav{
-  height: 100vh;
   background-color: $primary-color;
   grid-column: navbar-start/navbar-end;
   grid-row: 1/-1;
@@ -14,6 +13,7 @@
     text-decoration: none;
     color: #fff;
     font-size: 1.8rem;
+    // text-align: center;
   }
 
   &__home{
@@ -38,4 +38,7 @@
     margin-top: 20rem;
     text-align: center;
   }
+}
+
+.logo{
 }

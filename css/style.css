@@ -17,11 +17,10 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: [navbar-start] minmax(min-content, 1.5fr) [navbar-end content-start] minmax(min-content, 5fr) [content-end social-start] minmax(min-content, 0.5fr) [social-end];
-  grid-template-rows: repeat(4, 1fr); }
+  grid-gap: 2rem;
+  grid-template-columns: [navbar-start] minmax(min-content, 1.5fr) [navbar-end content-start] minmax(min-content, 5fr) [content-end social-start] minmax(min-content, 0.5fr) [social-end]; }
 
 .nav {
-  height: 100vh;
   background-color: #000;
   grid-column: navbar-start/navbar-end;
   grid-row: 1/-1;
@@ -51,10 +50,71 @@ body {
   background-color: #000;
   grid-column: social-start/social-end;
   grid-row: 1/-1;
-  display: grid; }
+  display: grid;
+  grid-template-columns: .01fr auto;
+  grid-template-rows: 1fr repeat(7, min-content) 1fr;
+  grid-gap: 1rem; }
+  .social__item {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem; }
+  .social__facebook {
+    grid-column: 2/3;
+    grid-row: 2/3; }
+  .social__houzz {
+    grid-column: 2/3;
+    grid-row: 3/4; }
+  .social__insta {
+    grid-column: 2/3;
+    grid-row: 4/5; }
+  .social__twitter {
+    grid-column: 2/3;
+    grid-row: 5/6; }
+  .social__linkedin {
+    grid-column: 2/3;
+    grid-row: 6/7; }
+  .social__pintrest {
+    grid-column: 2/3;
+    grid-row: 7/8; }
+  .social__google {
+    grid-column: 2/3;
+    grid-row: 8/9; }
 
 .content {
-  background-color: #6D5D4B;
   grid-column: content-start/content-end;
   grid-row: 1/-1;
-  display: grid; }
+  padding: 1.5rem;
+  display: grid;
+  grid-column-gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(14, 5vw); }
+  .content__item-1 {
+    grid-column: 1/2;
+    grid-row: 2/ 7; }
+  .content__item-2 {
+    grid-column: 2/3;
+    grid-row: 10/14; }
+  .content__item-3 {
+    grid-column: 2/3;
+    grid-row: 2/5; }
+  .content__item-5 {
+    grid-column: 2/3;
+    grid-row: 6/9; }
+  .content__item-4 {
+    grid-column: 1/2;
+    grid-row: 12/15; }
+  .content__item-6 {
+    grid-column: 1/2;
+    grid-row: 8/11; }
+  .content__item-7 {
+    grid-column: 3/4;
+    grid-row: 8/13; }
+  .content__item-8 {
+    grid-column: 3/4;
+    grid-row: 2/7; }
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block; }

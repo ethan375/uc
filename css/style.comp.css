@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #6D5D4B;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.grid {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: [navbar-start] minmax(min-content, 1.5fr) [navbar-end content-start] minmax(min-content, 5fr) [content-end social-start] minmax(min-content, 0.5fr) [social-end];
+  grid-template-rows: repeat(4, 1fr); }
+
+.nav {
+  height: 100vh;
+  background-color: #000;
+  grid-column: navbar-start/navbar-end;
+  grid-row: 1/-1;
+  display: grid;
+  grid-template-rows: 1fr [col-start] repeat(4, min-content) [col-end] 1fr;
+  grid-gap: 3rem;
+  justify-content: center; }
+  .nav__item {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem; }
+  .nav__home {
+    grid-row: 2/3; }
+  .nav__about {
+    grid-row: 3/4; }
+  .nav__products {
+    grid-row: 4/5; }
+  .nav__contact {
+    grid-row: 5/6; }
+  .nav__copyright {
+    font-size: .8rem;
+    grid-row: 6/7;
+    margin-top: 20rem;
+    text-align: center; }
+
+.logo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+  .logo__img {
+    width: 100%;
+    grid-column: 2/4;
+    object-fit: cover;
+    display: block;
+    margin-top: 3rem; }
+
+.social {
+  background-color: #000;
+  grid-column: social-start/social-end;
+  grid-row: 1/-1;
+  display: grid;
+  grid-template-columns: .01fr auto;
+  grid-template-rows: 1fr repeat(7, min-content) 1fr;
+  grid-gap: 1rem; }
+  .social__item {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem; }
+  .social__facebook {
+    grid-column: 2/3;
+    grid-row: 2/3; }
+  .social__houzz {
+    grid-column: 2/3;
+    grid-row: 3/4; }
+  .social__insta {
+    grid-column: 2/3;
+    grid-row: 4/5; }
+  .social__twitter {
+    grid-column: 2/3;
+    grid-row: 5/6; }
+  .social__linkedin {
+    grid-column: 2/3;
+    grid-row: 6/7; }
+  .social__pintrest {
+    grid-column: 2/3;
+    grid-row: 7/8; }
+  .social__google {
+    grid-column: 2/3;
+    grid-row: 8/9; }
+
+.content {
+  background-color: #f9f7f6;
+  grid-column: content-start/content-end;
+  grid-row: 1/-1;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(10, 10vh); }
+  .content__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block; }
+  .content__img-1 {
+    grid-column: 1/2;
+    grid-row: 1/8; }
