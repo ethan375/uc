@@ -19,7 +19,7 @@ const app = angular.module('Undercover', ['ngRoute']);
     .when('/home', {
       templateUrl: './views/home.html'
     })
-    .when('residential',{
+    .when('/residential',{
       templateUrl:'./views/residential.html'
     })
     .when('/retractableroofs',{
@@ -28,8 +28,14 @@ const app = angular.module('Undercover', ['ngRoute']);
     .when('/rectratableawnings',{
       templateUrl:'./views/retractable.html'
     })
-    .when('/screens',{
+    .when('/solarscreens',{
       templateUrl:'./views/screens.html'
+    })
+    .when('/about', {
+      templateUrl:"./views/about.html"
+    })
+    .when('/contact', {
+      templateUrl: "./views/contact.html"
     })
     .otherwise({
       templateUrl: './views/home.html'
