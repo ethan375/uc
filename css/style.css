@@ -118,3 +118,91 @@ img {
   width: 100%;
   object-fit: cover;
   display: block; }
+
+.pergolas {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-gap: 1.5rem; }
+  .pergolas__text {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    grid-column: 1/-1;
+    margin-top: 8rem; }
+
+.retractaroofs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-gap: 1.5rem; }
+  .retractaroofs__text {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    grid-column: 1/-1;
+    margin-top: 8rem; }
+
+.arcadia {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-gap: 1.5rem; }
+  .arcadia__text {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    grid-column: 1/-1;
+    margin-top: 8rem; }
+
+.commercial {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-gap: 1.5rem; }
+  .commercial__text {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    grid-column: 1/-1;
+    margin-top: 8rem; }
+
+.heaters {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-gap: 1.5rem; }
+  .heaters__text {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    grid-column: 1/-1;
+    margin-top: 8rem; }
+
+.residential {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-gap: 1.5rem; }
+  .residential__text {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    grid-column: 1/-1;
+    margin-top: 8rem; }
+
+.retractable {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-gap: 1.5rem; }
+  .retractable__text {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    grid-column: 1/-1;
+    margin-top: 8rem; }
+
+.screens {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-gap: 1.5rem; }
+  .screens__text {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    grid-column: 1/-1;
+    margin-top: 8rem; }
