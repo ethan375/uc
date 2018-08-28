@@ -32,7 +32,7 @@ img {
   grid-row: 1/-1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: minmax(max-content, 30rem) repeat(5, min-content) minmax(min-content, 1fr);
+  grid-template-rows: repeat(3, 3rem) repeat(5, min-content) minmax(min-content, 1fr);
   grid-gap: 3rem;
   justify-content: center; }
   .nav__item {
@@ -40,24 +40,24 @@ img {
     color: #fff;
     font-size: 1.8rem; }
   .nav__logo {
-    grid-column: 2/4;
-    grid-row: 1/2; }
+    grid-column: 1/-1;
+    grid-row: 1/4; }
   .nav__home {
     grid-column: 2/4;
-    grid-row: 2/3; }
+    grid-row: 5/6; }
   .nav__about {
     grid-column: 2/4;
-    grid-row: 3/4; }
+    grid-row: 6/7; }
   .nav__products {
     grid-column: 2/4;
-    grid-row: 4/5; }
+    grid-row: 7/8; }
   .nav__contact {
     grid-column: 2/4;
-    grid-row: 5/6; }
+    grid-row: 8/9; }
   .nav__copyright {
     font-size: .8rem;
     grid-column: 2/4;
-    grid-row: 6/7;
+    grid-row: 9/10;
     margin-top: 2rem;
     text-align: center; }
 
