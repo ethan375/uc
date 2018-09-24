@@ -41,3 +41,25 @@ const app = angular.module('Undercover', ['ngRoute']);
       templateUrl: './views/home.html'
     })
   });
+
+  app.controller("ContactController", ['$http', function($http){
+    controller = this;
+
+    this.submitForm = function(){
+      $http({
+        method:'POST',
+        url: 'https://script.google.com/a/undercoveroutdoors.com/macros/s/AKfycbzh7PuFXmL8DZ9RykwPyWug-fvmL1Z0mXydTupn/exec',
+        data:{
+          name: controller.name,
+          body: controller.message,
+          address: controller.address,
+          number: controller.number,
+          email: controller.email,
+        }
+      }).then(function(res){
+        console.log(res)
+      }).then(function(err){
+        console.error(err)
+      })
+    }
+  }])

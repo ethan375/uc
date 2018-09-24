@@ -46,3 +46,28 @@ img{
   display: block;
 } 
 
+.nav__menu{
+  display: none;
+  grid-column: 2/3;
+  background-color: $light-grey-1;
+  width: 250%;
+  z-index: 1;
+
+  a{
+    text-decoration: none;
+    font-size: 2.3rem;
+    color: #000;
+    display: flex;
+    justify-content: start;
+    gap: 3rem;
+  }
+
+  a:hover{
+    background-color: $light-grey-2;
+    transition: all 1.2s;
+  }
+}
+
+#products:hover #nav__menu{
+  display: block;
+}

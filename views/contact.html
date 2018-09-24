@@ -1,6 +1,16 @@
-<div class="contact">
-  <form action="unknown">
-    <input type="text">
-    <input type="textarea">
+<div class="contact" ng-controller="ContactController as con">
+  <form class="contact__form" ng-submit="con.submitForm()" method="POST">
+    <label for="name">Your name: (required)</label>
+    <input ng-model="con.name" class="contact__item contact__item--1" type="text">
+    <label for="address">Full Address</label>
+    <input ng-model="con.address" class="contact__item contact__item--2" type="text">
+    <label for="number">Phone Number:</label>
+    <input ng-model="con.number"class="contact__item contact__item--3" type="text">
+    <label for="email">Email Address</label>
+    <input ng-model="con.email" class="contact__item contact__item--4" name="email" type="text">
+    <label for="message">Message:</label>
+    <input ng-model="con.message" class="contact__item contact__item--5" type="textarea"> 
+
+    <button>Submit</button>
   </form>
 </div>

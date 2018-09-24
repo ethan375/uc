@@ -1,0 +1,12 @@
+.contact{
+  display: grid;
+  grid-template-columns: 1fr minmax(25rem, 100rem) 1fr;
+
+  &__form{
+    grid-column: 2/3;
+  }
+  
+  &__item{
+    justify-content: center;
+  }
+} 
