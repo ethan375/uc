@@ -5,13 +5,13 @@
 
   display: grid;
   grid-template-columns: .01fr auto;
-  grid-template-rows: minmax(max-content, 30rem) repeat(7, min-content) 1fr;
+  grid-template-rows: 20rem repeat(7, min-content) 1fr;
   grid-gap: 1rem;
 
   &__item{
     text-decoration: none;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   &__facebook{
@@ -49,4 +49,13 @@
     grid-row: 8/9;
   }
 
+}
+
+.hidden{
+  display: none;
+}
+
+.to-top{
+  display: relative;
+  // left: 3rem;
 }

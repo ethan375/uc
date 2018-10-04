@@ -1,5 +1,14 @@
-console.log("files working");
 const app = angular.module('Undercover', ['ngRoute']);
+
+// app.directive('top', function(){
+//   return{
+//     scope:{},
+//     restrict: 'E',
+//     link: function(scope, element, attrs){
+//       element.bind('scroll', function(e){console.log("scroll detected")});
+//     }
+//   }
+// })
 
   app.config(function($routeProvider){
     
@@ -62,4 +71,4 @@ const app = angular.module('Undercover', ['ngRoute']);
         console.error(err)
       })
     }
-  }])
+  }]);
