@@ -87,12 +87,12 @@ img {
   grid-row: 1/-1;
   display: grid;
   grid-template-columns: .01fr auto;
-  grid-template-rows: minmax(max-content, 30rem) repeat(7, min-content) 1fr;
+  grid-template-rows: 20rem repeat(7, min-content) 1fr;
   grid-gap: 1rem; }
   .social__item {
     text-decoration: none;
     color: #fff;
-    font-size: 1.2rem; }
+    font-size: 1.3rem; }
   .social__facebook {
     grid-column: 2/3;
     grid-row: 2/3; }
@@ -242,4 +242,8 @@ img {
 
 .contact {
   display: grid;
-  grid-template-columns: repeat(1fr minmax(25rem, 100rem) 1fr); }
+  grid-template-columns: 1fr minmax(25rem, 100rem) 1fr; }
+  .contact__form {
+    grid-column: 2/3; }
+  .contact__item {
+    justify-content: center; }
