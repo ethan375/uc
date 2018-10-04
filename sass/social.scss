@@ -49,6 +49,10 @@
     grid-row: 8/9;
   }
 
+.to-top{
+  grid-column
+}
+
 }
 
 .hidden{
@@ -56,6 +60,5 @@
 }
 
 .to-top{
-  display: relative;
-  // left: 3rem;
+  grid-column
 }
