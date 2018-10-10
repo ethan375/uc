@@ -29,7 +29,7 @@ img {
 .nav__menu {
   display: none;
   grid-column: 2/3;
-  background-color: #f9f7f6;
+  background-color: #95A5A6;
   width: 250%;
   z-index: 1; }
   .nav__menu a {
@@ -47,21 +47,27 @@ img {
   display: block; }
 
 .nav {
-  background-color: #000;
+  background-color: #2C3E50;
   grid-column: navbar-start/navbar-end;
   grid-row: 1/-1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 3rem) repeat(5, min-content) minmax(min-content, 1fr);
+  grid-template-rows: 0.1rem repeat(3, 3rem) repeat(5, min-content) minmax(min-content, 1fr);
   grid-gap: 3rem;
   justify-content: center; }
   .nav__item {
     text-decoration: none;
     color: #fff;
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    transition: all .5s; }
+  .nav__item:hover {
+    color: #95A5A6; }
   .nav__logo {
+    height: 80%;
+    width: 80%;
+    justify-self: center;
     grid-column: 1/-1;
-    grid-row: 1/4; }
+    grid-row: 2/5; }
   .nav__home {
     grid-column: 2/4;
     grid-row: 5/6; }
@@ -82,7 +88,7 @@ img {
     text-align: center; }
 
 .social {
-  background-color: #000;
+  background-color: #2C3E50;
   grid-column: social-start/social-end;
   grid-row: 1/-1;
   display: grid;
@@ -92,7 +98,10 @@ img {
   .social__item {
     text-decoration: none;
     color: #fff;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    transition: all .5s; }
+  .social__item:hover {
+    color: #95A5A6; }
   .social__facebook {
     grid-column: 2/3;
     grid-row: 2/3; }
@@ -114,12 +123,6 @@ img {
   .social__google {
     grid-column: 2/3;
     grid-row: 8/9; }
-
-.hidden {
-  display: none; }
-
-.to-top {
-  display: relative; }
 
 .content {
   grid-column: content-start/content-end;
@@ -161,95 +164,173 @@ img {
 .pergolas {
   display: grid;
   grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-template-rows: repeat(autofit, 90rem);
   grid-gap: 1.5rem; }
   .pergolas__text {
     font-size: 2rem;
     font-weight: 400;
     text-align: center;
     grid-column: 1/-1;
-    margin-top: 8rem; }
+    align-self: start; }
+  .pergolas__header {
+    font-size: 4rem;
+    grid-column: 1/-1;
+    justify-self: center; }
+  .pergolas__hr {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    align-self: end;
+    border-radius: 50%; }
 
 .retractaroofs {
   display: grid;
   grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-template-rows: repeat(autofit, 90rem);
   grid-gap: 1.5rem; }
   .retractaroofs__text {
     font-size: 2rem;
     font-weight: 400;
     text-align: center;
     grid-column: 1/-1;
-    margin-top: 8rem; }
+    align-self: start; }
+  .retractaroofs__header {
+    font-size: 4rem;
+    grid-column: 1/-1;
+    justify-self: center; }
+  .retractaroofs__hr {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    align-self: end;
+    border-radius: 50%; }
 
 .arcadia {
   display: grid;
   grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-template-rows: repeat(autofit, 90rem);
   grid-gap: 1.5rem; }
   .arcadia__text {
     font-size: 2rem;
     font-weight: 400;
     text-align: center;
     grid-column: 1/-1;
-    margin-top: 8rem; }
+    align-self: start; }
+  .arcadia__header {
+    font-size: 4rem;
+    grid-column: 1/-1;
+    justify-self: center; }
+  .arcadia__hr {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    align-self: end;
+    border-radius: 50%; }
 
 .commercial {
   display: grid;
   grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-template-rows: repeat(autofit, 90rem);
   grid-gap: 1.5rem; }
   .commercial__text {
     font-size: 2rem;
     font-weight: 400;
     text-align: center;
     grid-column: 1/-1;
-    margin-top: 8rem; }
+    align-self: start; }
+  .commercial__header {
+    font-size: 4rem;
+    grid-column: 1/-1;
+    justify-self: center; }
+  .commercial__hr {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    align-self: end;
+    border-radius: 50%; }
 
 .heaters {
   display: grid;
   grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-template-rows: repeat(autofit, 90rem);
   grid-gap: 1.5rem; }
   .heaters__text {
     font-size: 2rem;
     font-weight: 400;
     text-align: center;
     grid-column: 1/-1;
-    margin-top: 8rem; }
+    align-self: start; }
+  .heaters__header {
+    font-size: 4rem;
+    grid-column: 1/-1;
+    justify-self: center; }
+  .heaters__hr {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    align-self: end;
+    border-radius: 50%; }
 
 .residential {
   display: grid;
   grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-template-rows: repeat(autofit, 90rem);
   grid-gap: 1.5rem; }
   .residential__text {
     font-size: 2rem;
     font-weight: 400;
     text-align: center;
     grid-column: 1/-1;
-    margin-top: 8rem; }
+    align-self: start; }
+  .residential__header {
+    font-size: 4rem;
+    grid-column: 1/-1;
+    justify-self: center; }
+  .residential__hr {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    align-self: end;
+    border-radius: 50%; }
 
 .retractable {
   display: grid;
   grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-template-rows: repeat(autofit, 90rem);
   grid-gap: 1.5rem; }
   .retractable__text {
     font-size: 2rem;
     font-weight: 400;
     text-align: center;
     grid-column: 1/-1;
-    margin-top: 8rem; }
+    align-self: start; }
+  .retractable__header {
+    font-size: 4rem;
+    grid-column: 1/-1;
+    justify-self: center; }
+  .retractable__hr {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    align-self: end;
+    border-radius: 50%; }
 
 .screens {
   display: grid;
   grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-template-rows: repeat(autofit, 90rem);
   grid-gap: 1.5rem; }
   .screens__text {
     font-size: 2rem;
     font-weight: 400;
     text-align: center;
     grid-column: 1/-1;
-    margin-top: 8rem; }
+    align-self: start; }
+  .screens__header {
+    font-size: 4rem;
+    grid-column: 1/-1;
+    justify-self: center; }
+  .screens__hr {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    align-self: end;
+    border-radius: 50%; }
 
 .contact {
   display: grid;
   grid-template-columns: 1fr minmax(25rem, 100rem) 1fr; }
   .contact__form {
     grid-column: 2/3; }
-  .contact__item {
-    justify-content: center; }

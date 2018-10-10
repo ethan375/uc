@@ -5,7 +5,7 @@
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);  
-  grid-template-rows: repeat(3, 3rem) repeat(5, min-content) minmax(min-content, 1fr);
+  grid-template-rows: .1rem repeat(3, 3rem) repeat(5, min-content) minmax(min-content, 1fr);
   grid-gap: 3rem;
 
   justify-content: center;
@@ -14,12 +14,20 @@
     text-decoration: none;
     color: #fff;
     font-size: 1.8rem;
+    transition: all .5s;
     // text-align: center;
   }
 
+  &__item:hover{
+    color:$light-grey-1;
+  }
+
   &__logo{
+    height:80%;
+    width:80%;
+    justify-self: center;
     grid-column: 1/-1;
-    grid-row: 1/4;
+    grid-row: 2/5;
   }
 
   &__home{

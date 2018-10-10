@@ -12,6 +12,11 @@
     text-decoration: none;
     color: #fff;
     font-size: 1.3rem;
+    transition: all .5s;
+  }
+
+  &__item:hover{
+    color:$light-grey-1;
   }
 
   &__facebook{

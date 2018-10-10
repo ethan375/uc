@@ -1,6 +1,7 @@
    @mixin pdp {
   display: grid;
   grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-template-rows: repeat(autofit, 90rem);
   grid-gap: 1.5rem;
 
   &__text{
@@ -8,7 +9,20 @@
     font-weight: 400;
     text-align: center;
     grid-column: 1/-1;
-    margin-top: 8rem;
+    align-self: start;
+  }
+
+  &__header{
+    font-size: 4rem;
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+
+  &__hr{
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    align-self: end;
+    border-radius: 50%;
   }
 }
 .pergolas{ 
