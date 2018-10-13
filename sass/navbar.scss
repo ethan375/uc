@@ -5,7 +5,7 @@
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);  
-  grid-template-rows: .1rem repeat(3, 3rem) repeat(5, min-content) minmax(min-content, 1fr);
+  grid-template-rows: .1rem repeat(3, 3rem) repeat(5, min-content) repeat(2, minmax(min-content, 1fr));
   grid-gap: 3rem;
 
   justify-content: center;
@@ -56,5 +56,35 @@
     grid-row: 9/10;
     margin-top: 2rem;
     text-align: center;
+  }
+
+  &__financing{
+    grid-column:1/-1;
+    grid-row: 10/11;
+    justify-self:center;
+    height:50%;
+    width:50%;
+  }
+}
+
+.nav__menu{
+  display: none;
+  grid-column:2/3;
+  background-color: black;
+  width: 250%;
+  z-index: 1;
+
+  a{
+    text-decoration: none;
+    font-size: 2.3rem;
+    color: #000;
+    display: flex;
+    justify-content: start;
+    gap: 3rem;
+  }
+
+  a:hover{
+    color: $light-grey-2;
+    transition: all 1.2s;
   }
 }
