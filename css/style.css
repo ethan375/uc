@@ -374,6 +374,23 @@ img {
     .contact__phone__email-label {
       margin-top: 3rem; }
   .contact__follow {
-    display: none; }
-  .contact__phone > a {
-    margin: 1rem 0; }
+    grid-column: 2/3;
+    display: grid;
+    margin: 3rem;
+    font-size: 2rem; }
+    .contact__follow__header {
+      font-size: 3rem; }
+
+.contact > a {
+  margin: 1rem 0; }
+
+.aboutus {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  .aboutus__header {
+    grid-column: 1/-1;
+    justify-self: center;
+    font-size: 6rem; }
+  .aboutus__com {
+    grid-column: 1/-1;
+    font-size: 8rem; }

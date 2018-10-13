@@ -64,12 +64,17 @@
 
   
   	&__follow{
-  		display: none;
-  		// grid-column: 2/3;
-  		// display: grid;
-  	}
+  		grid-column: 2/3;
+  		display: grid;
+      margin: 3rem;
+      font-size: 2rem;
 
-  	&__phone > a{
-  		margin: 1rem 0;
-  	} 
+      &__header{
+        font-size: 3rem;
+      }
+  	}
 } 
+
+.contact > a {
+  margin: 1rem 0;
+}
