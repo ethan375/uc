@@ -1,6 +1,6 @@
 const app = angular.module('Undercover', ['ngRoute']);
+  console.log("this works like this");
   app.config(function($routeProvider){
-    
     $routeProvider
     .when( '/arcadia',{
       templateUrl:'./views/arcadia.html'
@@ -61,7 +61,3 @@ const app = angular.module('Undercover', ['ngRoute']);
       })
     }
   }]);
-
-  // app.controller("ImageController", [function(){
-    
-  // }]);

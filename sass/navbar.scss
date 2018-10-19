@@ -12,14 +12,14 @@
 
   &__item{
     text-decoration: none;
-    color: #fff;
+    color: $link-white;
     font-size: 1.8rem;
     transition: all .5s;
-    // text-align: center;
   }
 
   &__item:hover{
     color:$light-grey-1;
+    cursor: pointer;
   }
 
   &__logo{
@@ -68,23 +68,30 @@
 }
 
 .nav__menu{
-  display: none;
-  grid-column:2/3;
-  background-color: black;
-  width: 250%;
+  // grid-column:2/3;
+  background-color: $light-grey-1;
   z-index: 1;
+  justify-self: start;
+  display: none;
+  position: relative;
+  right: 0;
+  left:100;
 
   a{
     text-decoration: none;
     font-size: 2.3rem;
     color: #000;
-    display: flex;
     justify-content: start;
-    gap: 3rem;
   }
 
   a:hover{
     color: $light-grey-2;
     transition: all 1.2s;
   }
+}
+
+
+#products:hover + #product__menu{
+  background-color: pink;
+  // display: inline;
 }

@@ -26,6 +26,7 @@
   		padding: 1.5rem;
   		width: 80%;
   		margin-bottom: 3rem;
+      font-size: 2rem;
   	}
     &__message{
   		width: 80%;
@@ -45,7 +46,7 @@
   		grid-column: 2/3;
   		grid-column: 2/-1;
   		display: grid;
-  		font-size: 2rem;
+  		font-size: 3rem;
   		margin-left: 3rem;
 
   		&__header{
@@ -67,14 +68,20 @@
   		grid-column: 2/3;
   		display: grid;
       margin: 3rem;
-      font-size: 2rem;
+      font-size: 3rem;
 
       &__header{
         font-size: 3rem;
       }
   	}
-} 
 
-.contact > a {
-  margin: 1rem 0;
-}
+    &__link{
+       margin: 1rem 0;
+       color: $light-grey-1;
+       transition: all .5s;
+    }
+
+    &__link:hover{ 
+     color: $light-grey-1; 
+    }
+} 

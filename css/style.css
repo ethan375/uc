@@ -33,11 +33,11 @@ img {
   display: grid;
   grid-template-columns: .01fr auto;
   grid-template-rows: 20rem repeat(7, min-content) 1fr;
-  grid-gap: 1rem; }
+  grid-gap: 1.5rem; }
   .social__item {
     text-decoration: none;
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     transition: all .5s; }
   .social__item:hover {
     color: #95A5A6; }
@@ -78,7 +78,8 @@ img {
     font-size: 1.8rem;
     transition: all .5s; }
   .nav__item:hover {
-    color: #95A5A6; }
+    color: #95A5A6;
+    cursor: pointer; }
   .nav__logo {
     height: 80%;
     width: 80%;
@@ -111,21 +112,24 @@ img {
     width: 50%; }
 
 .nav__menu {
+  background-color: #95A5A6;
+  z-index: 1;
+  justify-self: start;
   display: none;
-  grid-column: 2/3;
-  background-color: black;
-  width: 250%;
-  z-index: 1; }
+  position: relative;
+  right: 0;
+  left: 100; }
   .nav__menu a {
     text-decoration: none;
     font-size: 2.3rem;
     color: #000;
-    display: flex;
-    justify-content: start;
-    gap: 3rem; }
+    justify-content: start; }
   .nav__menu a:hover {
     color: #aaa;
     transition: all 1.2s; }
+
+#products:hover + #product__menu {
+  background-color: pink; }
 
 .content {
   grid-column: content-start/content-end;
@@ -351,7 +355,8 @@ img {
     margin: 1rem;
     padding: 1.5rem;
     width: 80%;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    font-size: 2rem; }
   .contact__message {
     width: 80%;
     margin: 1rem; }
@@ -364,7 +369,7 @@ img {
     grid-column: 2/3;
     grid-column: 2/-1;
     display: grid;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-left: 3rem; }
     .contact__phone__header {
       font-size: 3rem;
@@ -377,12 +382,15 @@ img {
     grid-column: 2/3;
     display: grid;
     margin: 3rem;
-    font-size: 2rem; }
+    font-size: 3rem; }
     .contact__follow__header {
       font-size: 3rem; }
-
-.contact > a {
-  margin: 1rem 0; }
+  .contact__link {
+    margin: 1rem 0;
+    color: #95A5A6;
+    transition: all .5s; }
+  .contact__link:hover {
+    color: #95A5A6; }
 
 .aboutus {
   display: grid;
