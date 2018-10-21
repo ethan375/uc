@@ -69,7 +69,7 @@ img {
   grid-row: 1/-1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0.1rem repeat(3, 3rem) repeat(5, min-content) repeat(2, minmax(min-content, 1fr));
+  grid-template-rows: 0.1rem repeat(3, 3rem) repeat(5, min-content) minmax(10rem, 30rem) minmax(min-content, 1fr);
   grid-gap: 3rem;
   justify-content: center; }
   .nav__item {
