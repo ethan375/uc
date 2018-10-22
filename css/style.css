@@ -81,8 +81,8 @@ img {
     color: #95A5A6;
     cursor: pointer; }
   .nav__logo {
-    height: 180%;
-    width: 160%;
+    height: 13rem;
+    width: 23rem;
     justify-self: center;
     grid-column: 2/4;
     grid-row: 2/4; }
