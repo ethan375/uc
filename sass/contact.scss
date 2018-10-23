@@ -77,11 +77,11 @@
 
     &__link{
        margin: 1rem 0;
-       color: $light-grey-1;
+       color: $dark-grey-1;
        transition: all .5s;
     }
 
     &__link:hover{ 
-     color: $light-grey-1; 
+     color: black; 
     }
 } 

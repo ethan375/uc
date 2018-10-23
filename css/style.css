@@ -387,10 +387,10 @@ img {
       font-size: 3rem; }
   .contact__link {
     margin: 1rem 0;
-    color: #95A5A6;
+    color: #54483A;
     transition: all .5s; }
   .contact__link:hover {
-    color: #95A5A6; }
+    color: black; }
 
 .aboutus {
   display: grid;
