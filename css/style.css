@@ -27,7 +27,7 @@ img {
   display: block; }
 
 .social {
-  background-color: #293548;
+  background-color: #455979;
   grid-column: social-start/social-end;
   grid-row: 1/-1;
   display: grid;
@@ -64,7 +64,7 @@ img {
     grid-row: 8/9; }
 
 .nav {
-  background-color: #293548;
+  background-color: #455979;
   grid-column: navbar-start/navbar-end;
   grid-row: 1/-1;
   display: grid;
@@ -112,24 +112,22 @@ img {
     width: 50%; }
 
 .nav__menu {
-  background-color: #95A5A6;
-  z-index: 1;
-  justify-self: start;
+  background-color: skyblue;
+  z-index: 10;
+  justify-self: center;
   display: none;
-  position: relative;
-  right: 0;
-  left: 100; }
+  grid-column: 2/3; }
   .nav__menu a {
     text-decoration: none;
     font-size: 2.3rem;
-    color: #000;
+    color: white;
     justify-content: start; }
   .nav__menu a:hover {
     color: #aaa;
     transition: all 1.2s; }
 
 #products:hover + #product__menu {
-  background-color: pink; }
+  display: grid; }
 
 .content {
   grid-column: content-start/content-end;

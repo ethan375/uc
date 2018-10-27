@@ -69,19 +69,16 @@
 }
 
 .nav__menu{
-  // grid-column:2/3;
-  background-color: $light-grey-1;
-  z-index: 1;
-  justify-self: start;
+  background-color: skyblue;
+  z-index: 10;
+  justify-self: center;
   display: none;
-  position: relative;
-  right: 0;
-  left:100;
+  grid-column: 2/3; 
 
   a{
     text-decoration: none;
     font-size: 2.3rem;
-    color: #000;
+    color: white;
     justify-content: start;
   }
 
@@ -93,6 +90,5 @@
 
 
 #products:hover + #product__menu{
-  background-color: pink;
-  // display: inline;
+  display: grid;
 }
