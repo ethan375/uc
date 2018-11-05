@@ -13,13 +13,6 @@ $link-white: #fff;
 $primary-font: "Nunito", sans-serif;
 $secondary-font: 'Josefin sans', sans-serif;
 
-@media screen and (max-width: 768px){ 
-  .grid{
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
-
 
 *,
 *::before,
@@ -54,3 +47,9 @@ img{
   object-fit: cover;
   display: block;
 } 
+
+@media screen and (max-width: 768px){ 
+  .grid{
+    grid-template-columns: auto;
+  }
+}
