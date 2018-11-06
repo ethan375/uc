@@ -59,5 +59,10 @@
   .social{
     grid-row: 2/3;
     grid-column: 1/-1;
+    height: 20rem;
+    margin-top: -25px;
+  }
+  .social__item{
+    display: none;
   }
 }

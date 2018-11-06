@@ -62,7 +62,9 @@
   .pergolas,.retractaroofs,.arcadia,.commercial,.heaters,.residential,.retractable,.screens{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(autofit, 90rem);
-    grid-gap: 1.5rem;
+    grid-gap: 3rem;
     text-align: center;
+    width: 90%;
+    margin: 0 auto;
   }
 }
